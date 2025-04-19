@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detail Produk</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #2c3e50, #34495e);
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+
+    .product-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .product-detail img {
+      width: 80%;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+
+    .product-info {
+      margin-top: 20px;
+    }
+
+    .product-info h2 {
+      font-size: 2rem;
+    }
+
+    .product-info p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .btn-back {
+      background-color: #ff69b4;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #ff1493;
+    }
+
+    @media (max-width: 768px) {
+      .product-info h2 {
+        font-size: 1.7rem;
+      }
+
+      .product-info p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-info h2 {
+        font-size: 1.5rem;
+      }
+
+      .product-info p {
+        font-size: 0.9rem;
+      }
+
+      .btn-back {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="product-detail">
+      <img src="product1.jpg" alt="Produk 1">
+      <div class="product-info">
+        <h2>Produk 1</h2>
+        <p>Deskripsi detail produk 1. Ini adalah deskripsi yang lebih panjang dari produk ini. Dapatkan produk terbaik sekarang juga!</p>
+      </div>
+      <a href="index.html" class="btn-back">Kembali ke Halaman Utama</a>
+    </div>
+  </div>
+
+</body>
+</html>
